@@ -108,14 +108,63 @@ Enfin, je travaille en Agile : sprints, stand-ups, rétrospectives, estimation e
     ],
 
     contact: {
-      title: 'Construisons ensemble votre prochain projet',
-      message: `Vous avez un projet ambitieux en tête ? Une idée d'application web ou mobile qui mérite d'exister ? Ou simplement l'envie d'échanger avec un développeur passionné ?
+      title: 'Transformons votre vision en réalité digitale',
+      message: `🚀 Vous avez un projet ambitieux ? Une idée qui mérite d'exister ? Je suis là pour la concrétiser.
 
-Je serais ravi d'en discuter avec vous.
+En tant que développeur full-stack expérimenté, je propose bien plus qu'un simple service de développement. Je vous offre un partenariat technique complet, de la conception à la mise en production, avec un suivi post-livraison.
 
-Que vous soyez une startup en recherche d'un développeur full-stack, une agence qui a besoin de renfort technique, ou une entreprise qui veut moderniser son stack technologique — je suis à votre écoute.
+📱 APPLICATIONS MOBILES (React Native & Flutter)
+Je développe des applications mobiles natives iOS et Android performantes, avec une UX/UI moderne et intuitive. Que ce soit pour une app e-commerce, une plateforme de réservation, un réseau social, ou tout autre concept innovant — je maîtrise l'ensemble du processus : wireframes, design, développement, intégration API, notifications push, paiements en ligne, et publication sur les stores.
 
-Mon engagement : des solutions techniques solides, une communication transparente, et une collaboration orientée résultats.`,
+💻 APPLICATIONS WEB (Angular & React)
+Je crée des interfaces web modernes et réactives qui captivent vos utilisateurs. Dashboard administratifs, plateformes SaaS, sites vitrines haut de gamme, applications métiers complexes — je transforme vos besoins en solutions web élégantes et performantes, optimisées pour le SEO et la conversion.
+
+⚙️ BACKEND ROBUSTE (Laravel & PHP)
+Je construis des architectures backend solides et scalables : API REST/GraphQL sécurisées, systèmes d'authentification avancés, gestion de bases de données complexes, intégrations tierces (Stripe, PayPal, SMS, Mailing), microservices, et bien plus. Votre infrastructure technique sera fiable, maintenable et évolutive.
+
+🎯 MON APPROCHE UNIQUE
+
+✅ ANALYSE APPROFONDIE : Je prends le temps de comprendre votre business model, vos utilisateurs cibles, et vos objectifs commerciaux pour créer une solution parfaitement adaptée.
+
+✅ ARCHITECTURE PENSÉE : Avant d'écrire la moindre ligne de code, je conçois une architecture technique propre, documentée et évolutive qui anticipe vos besoins futurs.
+
+✅ DÉVELOPPEMENT AGILE : Livraisons fréquentes, feedback continu, ajustements en temps réel. Vous restez maître de votre projet à chaque étape.
+
+✅ CODE DE QUALITÉ : Tests automatisés, code reviews, documentation complète, respect des best practices. Je ne livre que du code dont je suis fier.
+
+✅ PERFORMANCE & SÉCURITÉ : Optimisation des temps de chargement, protection contre les vulnérabilités, conformité RGPD. Votre application sera rapide et sécurisée.
+
+✅ SUPPORT POST-LAUNCH : Formation de votre équipe, documentation technique, maintenance évolutive, corrections de bugs. Je reste disponible après la livraison.
+
+🎓 EXPERTISE CERTIFIÉE
+Plus de [X] projets livrés avec succès dans des domaines variés : e-commerce, fintech, santé, éducation, logistique. Des clients satisfaits qui reviennent et recommandent mes services.
+
+💼 POUR QUI ?
+
+• STARTUPS : Besoin d'un MVP rapide pour lever des fonds ? Je transforme votre pitch en produit concret en quelques semaines.
+
+• AGENCES : Débordés par les projets ? Je renforce votre équipe technique en tant que freelance expert.
+
+• PME/GRANDES ENTREPRISES : Votre legacy code vous freine ? Je modernise votre stack technologique et optimise vos processus.
+
+• ENTREPRENEURS : Une idée mais pas de CTO ? Je deviens votre bras droit technique et vous accompagne de A à Z.
+
+🌟 CE QUE MES CLIENTS APPRÉCIENT LE PLUS
+
+→ Ma réactivité : Réponse sous 24h maximum, disponibilité pour les urgences.
+→ Ma pédagogie : J'explique clairement les choix techniques, pas de jargon incompréhensible.
+→ Mon honnêteté : Si quelque chose n'est pas faisable ou pertinent, je vous le dis franchement.
+→ Mon engagement : Vos délais sont mes délais. Vos objectifs sont mes objectifs.
+→ Ma passion : Chaque ligne de code est écrite avec soin et fierté.
+
+💰 TARIFS TRANSPARENTS
+Forfait projet ou régie au jour/homme selon vos besoins. Devis détaillé gratuit sous 48h. Pas de mauvaises surprises, pas de coûts cachés.
+
+📞 PRÊT À DÉMARRER ?
+
+Que votre projet soit clairement défini ou encore à l'état d'idée, contactez-moi pour un premier échange gratuit et sans engagement. Je vous conseillerai objectivement sur la meilleure approche technique et vous proposerai un plan d'action concret.
+
+Ensemble, créons quelque chose d'exceptionnel. 🚀`,
       email: 'gueye.medoune@mit.edu.sn',
       linkedin: 'https://linkedin.com/in/madu-tech',
       github: 'https://github.com/Madu_Tech',
