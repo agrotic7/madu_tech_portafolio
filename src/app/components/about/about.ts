@@ -41,26 +41,26 @@ export class AboutComponent implements OnInit, AfterViewInit {
   }
 
   initAnimations() {
-    // Scroll Reveals
+    // Scroll Reveals - Plus rapide
     const scrollRevealElements = document.querySelectorAll('.scroll-reveal');
     
     scrollRevealElements.forEach((element, index) => {
       gsap.fromTo(element,
         {
-          y: 100,
+          y: 50,
           opacity: 0,
-          scale: 0.9
+          scale: 0.95
         },
         {
           y: 0,
           opacity: 1,
           scale: 1,
-          duration: 1,
-          delay: index * 0.2,
-          ease: 'power3.out',
+          duration: 0.5,
+          delay: index * 0.1,
+          ease: 'power2.out',
           scrollTrigger: {
             trigger: element,
-            start: 'top 80%',
+            start: 'top 90%',
             once: true
           }
         }

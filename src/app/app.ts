@@ -42,10 +42,10 @@ export class App implements OnInit, AfterViewInit {
   }
 
   initScrollAnimations() {
-    // Ajouter des animations de révélation au scroll pour tous les éléments
+    // Ajouter des animations de révélation au scroll - Plus rapide
     const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -100px 0px'
+      threshold: 0.05,
+      rootMargin: '0px 0px -50px 0px'
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -56,11 +56,11 @@ export class App implements OnInit, AfterViewInit {
       });
     }, observerOptions);
 
-    // Observer tous les éléments avec la classe scroll-reveal
+    // Observer tous les éléments immédiatement
     setTimeout(() => {
       document.querySelectorAll('.scroll-reveal').forEach(el => {
         observer.observe(el);
       });
-    }, 1000);
+    }, 100);
   }
 }

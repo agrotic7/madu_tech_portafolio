@@ -40,46 +40,32 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
   }
 
   initAnimations() {
-    // Project cards animation
+    // Project cards animation - Plus rapide
     const projectCards = document.querySelectorAll('.project-card');
     
     projectCards.forEach((card, index) => {
       gsap.fromTo(card,
         {
-          y: 100,
+          y: 50,
           opacity: 0,
-          rotateX: -20,
-          scale: 0.9
+          scale: 0.95
         },
         {
           y: 0,
           opacity: 1,
-          rotateX: 0,
           scale: 1,
-          duration: 1,
-          delay: index * 0.2,
-          ease: 'power3.out',
+          duration: 0.5,
+          delay: index * 0.1,
+          ease: 'power2.out',
           scrollTrigger: {
             trigger: card,
-            start: 'top 80%',
+            start: 'top 90%',
             once: true
           }
         }
       );
     });
 
-    // Parallax effect on scroll
-    projectCards.forEach((card) => {
-      gsap.to(card, {
-        y: -50,
-        scrollTrigger: {
-          trigger: card,
-          start: 'top bottom',
-          end: 'bottom top',
-          scrub: 1
-        }
-      });
-    });
   }
 
   getProjectIcon(index: number): string {

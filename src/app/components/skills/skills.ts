@@ -41,27 +41,25 @@ export class SkillsComponent implements OnInit, AfterViewInit {
   }
 
   initAnimations() {
-    // Scroll reveals for skill cards
+    // Scroll reveals for skill cards - Plus rapide
     const skillCards = document.querySelectorAll('.skill-card');
     
     gsap.fromTo(skillCards,
       {
-        y: 100,
+        y: 50,
         opacity: 0,
-        scale: 0.9,
-        rotateY: -15
+        scale: 0.95
       },
       {
         y: 0,
         opacity: 1,
         scale: 1,
-        rotateY: 0,
-        duration: 1,
-        stagger: 0.2,
-        ease: 'power3.out',
+        duration: 0.4,
+        stagger: 0.1,
+        ease: 'power2.out',
         scrollTrigger: {
           trigger: '.skills-section',
-          start: 'top 60%',
+          start: 'top 85%',
           once: true
         }
       }
@@ -80,11 +78,11 @@ export class SkillsComponent implements OnInit, AfterViewInit {
         },
         {
           width: `${width}%`,
-          duration: 1.5,
+          duration: 0.8,
           ease: 'power2.out',
           scrollTrigger: {
             trigger: bar,
-            start: 'top 85%',
+            start: 'top 90%',
             once: true
           }
         }
