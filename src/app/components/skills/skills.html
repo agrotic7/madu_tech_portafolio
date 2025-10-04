@@ -1,0 +1,272 @@
+<section id="skills" class="skills-section relative py-32 bg-gradient-to-b from-black via-gray-900 to-black overflow-hidden">
+  
+  <!-- Animated Grid Background -->
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute inset-0" style="background-image: repeating-linear-gradient(0deg, rgba(255,255,255,0.05) 0px, transparent 1px, transparent 40px), repeating-linear-gradient(90deg, rgba(255,255,255,0.05) 0px, transparent 1px, transparent 40px);"></div>
+  </div>
+
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    
+    <!-- Section Title -->
+    <div class="text-center mb-20 scroll-reveal">
+      <span class="text-blue-400 text-sm font-semibold tracking-widest uppercase mb-4 block">Compétences</span>
+      <h2 class="text-5xl sm:text-6xl lg:text-7xl font-black mb-6">
+        <span class="bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent">
+          {{ skillsData?.title }}
+        </span>
+      </h2>
+      <p class="text-gray-400 text-xl max-w-3xl mx-auto">{{ skillsData?.intro }}</p>
+    </div>
+
+    <!-- Tech Stack Grid -->
+    <div class="grid lg:grid-cols-2 gap-8 mb-20">
+      
+      <!-- Backend -->
+      <div class="scroll-reveal skill-card group">
+        <div class="glass-card p-8 h-full hover:scale-105 transition-all duration-500 relative overflow-hidden">
+          <!-- Glow Effect -->
+          <div class="absolute inset-0 bg-gradient-to-br from-red-500/10 to-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          
+          <div class="relative z-10">
+            <!-- Header -->
+            <div class="flex items-center gap-4 mb-6">
+              <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">
+                🔧
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold">{{ skillsData?.backend?.title }}</h3>
+                <div class="w-20 h-1 bg-gradient-to-r from-red-500 to-orange-500 mt-2"></div>
+              </div>
+            </div>
+
+            <!-- Description -->
+            <p class="text-gray-300 mb-6 leading-relaxed">{{ skillsData?.backend?.description }}</p>
+
+            <!-- Progress Bars -->
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-sm font-semibold">Laravel</span>
+                  <span class="text-sm text-gray-400">95%</span>
+                </div>
+                <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-red-500 to-orange-500 rounded-full skill-bar" data-width="95"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-sm font-semibold">PHP</span>
+                  <span class="text-sm text-gray-400">90%</span>
+                </div>
+                <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-red-500 to-orange-500 rounded-full skill-bar" data-width="90"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-sm font-semibold">API REST</span>
+                  <span class="text-sm text-gray-400">93%</span>
+                </div>
+                <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-red-500 to-orange-500 rounded-full skill-bar" data-width="93"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-2 mt-6">
+              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs">MySQL</span>
+              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs">PostgreSQL</span>
+              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs">JWT</span>
+              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs">Docker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frontend -->
+      <div class="scroll-reveal skill-card group">
+        <div class="glass-card p-8 h-full hover:scale-105 transition-all duration-500 relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          
+          <div class="relative z-10">
+            <div class="flex items-center gap-4 mb-6">
+              <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">
+                🎨
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold">{{ skillsData?.frontend?.title }}</h3>
+                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 mt-2"></div>
+              </div>
+            </div>
+
+            <p class="text-gray-300 mb-6 leading-relaxed">{{ skillsData?.frontend?.description }}</p>
+
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-sm font-semibold">Angular</span>
+                  <span class="text-sm text-gray-400">92%</span>
+                </div>
+                <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full skill-bar" data-width="92"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-sm font-semibold">React</span>
+                  <span class="text-sm text-gray-400">90%</span>
+                </div>
+                <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full skill-bar" data-width="90"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-sm font-semibold">TypeScript</span>
+                  <span class="text-sm text-gray-400">88%</span>
+                </div>
+                <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full skill-bar" data-width="88"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-2 mt-6">
+              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs">RxJS</span>
+              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs">Redux</span>
+              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs">Tailwind</span>
+              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs">SCSS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile -->
+      <div class="scroll-reveal skill-card group">
+        <div class="glass-card p-8 h-full hover:scale-105 transition-all duration-500 relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-br from-green-500/10 to-emerald-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          
+          <div class="relative z-10">
+            <div class="flex items-center gap-4 mb-6">
+              <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">
+                📱
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold">{{ skillsData?.mobile?.title }}</h3>
+                <div class="w-20 h-1 bg-gradient-to-r from-green-500 to-emerald-500 mt-2"></div>
+              </div>
+            </div>
+
+            <p class="text-gray-300 mb-6 leading-relaxed">{{ skillsData?.mobile?.description }}</p>
+
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-sm font-semibold">React Native</span>
+                  <span class="text-sm text-gray-400">89%</span>
+                </div>
+                <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-green-500 to-emerald-500 rounded-full skill-bar" data-width="89"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-sm font-semibold">Flutter</span>
+                  <span class="text-sm text-gray-400">87%</span>
+                </div>
+                <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-green-500 to-emerald-500 rounded-full skill-bar" data-width="87"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-sm font-semibold">Responsive Design</span>
+                  <span class="text-sm text-gray-400">95%</span>
+                </div>
+                <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-green-500 to-emerald-500 rounded-full skill-bar" data-width="95"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-2 mt-6">
+              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs">iOS</span>
+              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs">Android</span>
+              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs">PWA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="scroll-reveal skill-card group">
+        <div class="glass-card p-8 h-full hover:scale-105 transition-all duration-500 relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          
+          <div class="relative z-10">
+            <div class="flex items-center gap-4 mb-6">
+              <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">
+                🛠️
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold">{{ skillsData?.tools?.title }}</h3>
+                <div class="w-20 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mt-2"></div>
+              </div>
+            </div>
+
+            <p class="text-gray-300 mb-6 leading-relaxed">{{ skillsData?.tools?.description }}</p>
+
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-sm font-semibold">Git</span>
+                  <span class="text-sm text-gray-400">93%</span>
+                </div>
+                <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-full skill-bar" data-width="93"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-sm font-semibold">Docker</span>
+                  <span class="text-sm text-gray-400">85%</span>
+                </div>
+                <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-full skill-bar" data-width="85"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-sm font-semibold">CI/CD</span>
+                  <span class="text-sm text-gray-400">88%</span>
+                </div>
+                <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-full skill-bar" data-width="88"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-2 mt-6">
+              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs">Jest</span>
+              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs">PHPUnit</span>
+              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs">Agile</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Conclusion -->
+    <div class="scroll-reveal text-center max-w-4xl mx-auto">
+      <div class="glass-card p-10 relative overflow-hidden group">
+        <div class="absolute inset-0 bg-gradient-to-r from-purple-500/10 via-pink-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        <p class="text-xl text-gray-300 leading-relaxed relative z-10">
+          {{ skillsData?.conclusion }}
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>

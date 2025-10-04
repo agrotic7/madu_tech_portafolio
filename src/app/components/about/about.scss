@@ -1,0 +1,45 @@
+.about-section {
+  position: relative;
+}
+
+// Scroll reveal base state
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(100px) scale(0.9);
+}
+
+// Glass card effects
+.glass-card {
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  }
+}
+
+// Counter animation
+.counter {
+  font-variant-numeric: tabular-nums;
+}
+
+// Responsive
+@media (max-width: 1024px) {
+  .about-section {
+    padding: 5rem 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-section {
+    padding: 3rem 0;
+    
+    h2 {
+      font-size: 2.5rem !important;
+    }
+  }
+}

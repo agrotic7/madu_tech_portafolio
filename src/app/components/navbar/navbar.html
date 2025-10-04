@@ -1,0 +1,68 @@
+<nav [class]="isScrolled ? 'navbar scrolled' : 'navbar'" class="fixed top-0 left-0 w-full z-50">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+      
+      <!-- Logo Minimaliste -->
+      <a href="#hero" (click)="scrollToSection($event, '#hero')" class="group flex items-center gap-3">
+        <div class="relative">
+          <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center font-black text-black text-xl group-hover:scale-110 transition-transform">
+            M
+          </div>
+          <div class="absolute -inset-1 rounded-full bg-white opacity-20 blur-lg group-hover:opacity-40 transition-opacity"></div>
+        </div>
+        <span class="text-xl font-black text-white hidden sm:block">Madu_Tech</span>
+      </a>
+
+      <!-- Menu Desktop - Style Minimaliste -->
+      <ul class="hidden md:flex items-center gap-1">
+        <li *ngFor="let item of menuItems">
+          <a 
+            [href]="item.link" 
+            (click)="scrollToSection($event, item.link)" 
+            class="px-5 py-2 text-sm font-medium text-gray-400 hover:text-white transition-colors relative group"
+          >
+            {{ item.label }}
+            <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-white group-hover:w-8 transition-all duration-300"></span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- CTA Simple -->
+      <a href="#contact" 
+         (click)="scrollToSection($event, '#contact')" 
+         class="hidden md:block px-6 py-2.5 bg-white text-black text-sm font-bold rounded-full hover:scale-105 transition-transform">
+        Contact
+      </a>
+
+      <!-- Menu Burger Minimaliste -->
+      <button 
+        (click)="toggleMobileMenu()" 
+        class="md:hidden w-10 h-10 flex flex-col justify-center items-center gap-1.5 group"
+        aria-label="Menu"
+      >
+        <span [class]="isMobileMenuOpen ? 'burger-line active top' : 'burger-line top'"></span>
+        <span [class]="isMobileMenuOpen ? 'burger-line active middle' : 'burger-line middle'"></span>
+        <span [class]="isMobileMenuOpen ? 'burger-line active bottom' : 'burger-line bottom'"></span>
+      </button>
+    </div>
+
+    <!-- Menu Mobile Full Screen -->
+    <div [class]="isMobileMenuOpen ? 'mobile-menu-overlay active' : 'mobile-menu-overlay'">
+      <div class="flex flex-col items-center justify-center h-full space-y-8">
+        <a *ngFor="let item of menuItems; let i = index" 
+           [href]="item.link" 
+           (click)="scrollToSection($event, item.link)"
+           class="text-4xl font-black text-white hover:text-gray-400 transition-colors"
+           [style.animation-delay]="(i * 0.1) + 's'">
+          {{ item.label }}
+        </a>
+        
+        <a href="#contact" 
+           (click)="scrollToSection($event, '#contact')" 
+           class="mt-8 px-10 py-4 bg-white text-black text-lg font-bold rounded-full hover:scale-110 transition-transform">
+          Me contacter
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>

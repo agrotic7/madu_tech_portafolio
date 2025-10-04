@@ -1,0 +1,207 @@
+.hero-section {
+  position: relative;
+  background: #000;
+  perspective: 1000px;
+}
+
+// Animated Blobs
+@keyframes blob {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+.animation-delay-6000 {
+  animation-delay: 6s;
+}
+
+// Grid Pattern
+.bg-grid-pattern {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: grid-move 20s linear infinite;
+}
+
+@keyframes grid-move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
+// Stars
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+}
+
+// Gradient Text
+.gradient-text {
+  background-size: 200% auto;
+  animation: gradient-flow 3s ease infinite;
+}
+
+@keyframes gradient-flow {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+// Rotating Words Container
+.rotating-words {
+  display: inline-block;
+  min-width: 250px;
+  text-align: left;
+}
+
+.rotating-word {
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+// Social Links
+.social-link {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+// Scroll Down Animation
+@keyframes scroll-down {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+
+.animate-scroll-down {
+  animation: scroll-down 2s ease-in-out infinite;
+}
+
+// Magnetic Button Effect
+.magnetic-btn {
+  transform-style: preserve-3d;
+  will-change: transform;
+  
+  &:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
+}
+
+// Fade In Up Animation
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out;
+}
+
+// Bounce Slow Animation
+.animate-bounce-slow {
+  animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0) translateX(-50%);
+  }
+  50% {
+    transform: translateY(-10px) translateX(-50%);
+  }
+}
+
+// Hero Title specific
+.hero-title {
+  .line {
+    perspective: 1000px;
+  }
+  
+  .word {
+    display: inline-block;
+    transform-origin: 50% 100%;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem !important;
+  }
+
+  .rotating-words {
+    min-width: 180px;
+  }
+
+  .magnetic-btn {
+    font-size: 1rem !important;
+    padding: 1rem 2rem !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 2rem !important;
+  }
+  
+  .social-link {
+    margin: 0 0.5rem;
+  }
+}
